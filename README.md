@@ -8,7 +8,7 @@ The programs is based on two classes:
   
 The procedure to implement a new customized training is prety simple:
 
-## 1st step -- Define the file-header
+## 1<sup>st</sup> step -- Define the file-header
 
 Define a variable **fh** with the file-header data, according to the following procedure:
 
@@ -26,7 +26,7 @@ fh = Header(author = 'Luis H PINTO',
             description = 'Half Marathon PHASE II: WEEK 8 | 3 x ( 1.70 T + 0.40 E)')
 ```
 
-## 2nd step -- Input the runner features and the result of the Cooper Test
+## 2<sup>nd</sup> step -- Input the runner features and the result of the Cooper Test
 
 As the most part of the runners know, a **Cooper Test** is usually performed in a flat-track with a 5-minutes warming up and a 12-minutes **AS-FAST-AS-POSSIBLE**, registering at the end the **distance** covered.
 
@@ -44,14 +44,14 @@ for example:
 df = Cooper(age = 46,weight = 74,distance = 2570.0)
 ```
 
-## 3rd step -- Print the file-header
+## 3<sup>rd</sup> step -- Print the file-header
 
 Print the file-header with the command:
 ```
 fh.printHeader()
 ```
 
-## 4th step -- Define the workout sequence
+## 4<sup>th</sup> step -- Define the workout sequence
 
 The workout sequence should be defined according to the runner objective. It can be an **EASY** session just for endurance improvment, and **THRESHDOLD** or **INTERVALS** session for performance improvment, etc.
 
@@ -121,13 +121,30 @@ Please note that for intervals it is necessary to input two distances through an
 df.IntervalsT(distance = [200,200],intensity = ['repetition','easy'])
 ```
 
-## 5th step -- Close the file
+## 5<sup>th</sup> step -- Close the file
 
 Print the file-closer with the command:
 ```
 fh.Close()
 ```
 
-## 6th step -- Run the code and copy the output
+## 6<sup>th</sup> step -- Run the code and copy the output
 
 Run the code and copy the output to a **.zwo** file.
+
+The final result should look like this:
+```
+<workout_file>
+<author>Luis H.</author>
+<name>ONE-MILE-THRESHOLD</name>
+<description>JACK DANIELS -- Training Plan for Half Marathon PHASE III: WEEK 9 | 6.80 T + 0.40 E + 6 x (0.20 R + 0.20 E)</description>
+<sportType>run</sportType>
+<workout>
+<Warmup Duration="1000" PowerLow="0.71018662" PowerHigh="0.80679108" pace="1" />
+<SteadyState Duration="6800" Power="0.90339554" pace="1" />
+<SteadyState Duration="400" Power="0.71018662" pace="1" />
+<IntervalsT Repeat="6" OnDuration="200" OffDuration="200" OnPower="1.14490669" OffPower="0.71018662" pace="1" \>
+<Cooldown Duration="1000" PowerLow="0.80679108" PowerHigh="0.71018662" pace="1" />
+</workout>
+</workout_file>
+```
