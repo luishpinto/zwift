@@ -143,7 +143,7 @@ The final result should look like this:
 <Warmup Duration="1000" PowerLow="0.71018662" PowerHigh="0.80679108" pace="1" />
 <SteadyState Duration="6800" Power="0.90339554" pace="1" />
 <SteadyState Duration="400" Power="0.71018662" pace="1" />
-<IntervalsT Repeat="6" OnDuration="200" OffDuration="200" OnPower="1.14490669" OffPower="0.71018662" pace="1" \>
+<IntervalsT Repeat="6" OnDuration="200" OffDuration="200" OnPower="1.14490669" OffPower="0.71018662" pace="1" />
 <Cooldown Duration="1000" PowerLow="0.80679108" PowerHigh="0.71018662" pace="1" />
 </workout>
 </workout_file>
