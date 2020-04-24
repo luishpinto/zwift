@@ -1,0 +1,11 @@
+<workout_file>
+<author>Luis H. PINTO</author>
+<name>Speed Test</name>
+<description>1.00 km warming up + 12:00 min @ VO2Max + 1.00 km cooling down</description>
+<sportType>run</sportType>
+<workout>
+<Warmup Duration="1000" PowerLow="0.76466462" PowerHigh="0.85977641" pace="1" />
+<SteadyState Duration="2700" Power="1.05000000" pace="1" />
+<Cooldown Duration="1000" PowerLow="0.85977641" PowerHigh="0.76466462" pace="1" />
+</workout>
+</workout_file>
