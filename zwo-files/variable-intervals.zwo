@@ -1,0 +1,16 @@
+<workout_file>
+<author>Luis H. PINTO</author>
+<name>Variable Intervals</name>
+<description>1.00 km warming up + 3 x ( 0.20 km @ I + 0.20 km recovering + 0.20 km @ I + 0.20 km recovering + 0.40 km @ I + 0.40 km recovering ) + 1.00 km cooling down</description>
+<sportType>run</sportType>
+<workout>
+<Warmup Duration="1000" PowerLow="0.80848885" PowerHigh="0.90509331" pace="1" />
+<IntervalsT Repeat="2" OnDuration="200" OffDuration="200" OnPower="1.05000000" OffPower="0.80848885" pace="1" />
+<IntervalsT Repeat="1" OnDuration="400" OffDuration="400" OnPower="1.05000000" OffPower="0.80848885" pace="1" />
+<IntervalsT Repeat="2" OnDuration="200" OffDuration="200" OnPower="1.05000000" OffPower="0.80848885" pace="1" />
+<IntervalsT Repeat="1" OnDuration="400" OffDuration="400" OnPower="1.05000000" OffPower="0.80848885" pace="1" />
+<IntervalsT Repeat="2" OnDuration="200" OffDuration="200" OnPower="1.05000000" OffPower="0.80848885" pace="1" />
+<IntervalsT Repeat="1" OnDuration="400" OffDuration="400" OnPower="1.05000000" OffPower="0.80848885" pace="1" />
+<Cooldown Duration="1000" PowerLow="0.90509331" PowerHigh="0.80848885" pace="1" />
+</workout>
+</workout_file>
